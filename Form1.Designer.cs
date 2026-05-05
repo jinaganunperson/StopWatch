@@ -28,20 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnset = new System.Windows.Forms.Button();
+            this.btnstop = new System.Windows.Forms.Button();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnset
+            // 
+            this.btnset.Font = new System.Drawing.Font("휴먼둥근헤드라인", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnset.Location = new System.Drawing.Point(504, 208);
+            this.btnset.Name = "btnset";
+            this.btnset.Size = new System.Drawing.Size(164, 44);
+            this.btnset.TabIndex = 7;
+            this.btnset.Text = "SET";
+            this.btnset.UseVisualStyleBackColor = true;
+            // 
+            // btnstop
+            // 
+            this.btnstop.Font = new System.Drawing.Font("휴먼둥근헤드라인", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnstop.Location = new System.Drawing.Point(156, 208);
+            this.btnstop.Name = "btnstop";
+            this.btnstop.Size = new System.Drawing.Size(164, 44);
+            this.btnstop.TabIndex = 6;
+            this.btnstop.Text = "STOP";
+            this.btnstop.UseVisualStyleBackColor = true;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("휴먼둥근헤드라인", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblTime.Location = new System.Drawing.Point(139, 79);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(529, 101);
+            this.lblTime.TabIndex = 5;
+            this.lblTime.Text = "00:00:00";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("휴먼둥근헤드라인", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblName.Location = new System.Drawing.Point(11, 11);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(388, 50);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "STOPWATCH";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 262);
+            this.Controls.Add(this.btnset);
+            this.Controls.Add(this.btnstop);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.lblName);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnset;
+        private System.Windows.Forms.Button btnstop;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Label lblName;
     }
 }
 
