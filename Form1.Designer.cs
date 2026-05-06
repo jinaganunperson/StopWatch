@@ -41,7 +41,7 @@
             this.btnset.Location = new System.Drawing.Point(504, 208);
             this.btnset.Name = "btnset";
             this.btnset.Size = new System.Drawing.Size(164, 44);
-            this.btnset.TabIndex = 7;
+            this.btnset.TabIndex = 3;
             this.btnset.Text = "SET";
             this.btnset.UseVisualStyleBackColor = true;
             this.btnset.Click += new System.EventHandler(this.btnset_Click);
@@ -52,7 +52,7 @@
             this.btnstop.Location = new System.Drawing.Point(326, 208);
             this.btnstop.Name = "btnstop";
             this.btnstop.Size = new System.Drawing.Size(164, 44);
-            this.btnstop.TabIndex = 6;
+            this.btnstop.TabIndex = 2;
             this.btnstop.Text = "STOP";
             this.btnstop.UseVisualStyleBackColor = true;
             this.btnstop.Click += new System.EventHandler(this.btnstop_Click);
@@ -64,7 +64,7 @@
             this.lblTime.Location = new System.Drawing.Point(139, 79);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(529, 101);
-            this.lblTime.TabIndex = 5;
+            this.lblTime.TabIndex = 0;
             this.lblTime.Text = "00:00:00";
             // 
             // lblName
@@ -74,7 +74,7 @@
             this.lblName.Location = new System.Drawing.Point(11, 11);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(388, 50);
-            this.lblName.TabIndex = 4;
+            this.lblName.TabIndex = 0;
             this.lblName.Text = "STOPWATCH";
             // 
             // btnstart
@@ -83,7 +83,7 @@
             this.btnstart.Location = new System.Drawing.Point(154, 208);
             this.btnstart.Name = "btnstart";
             this.btnstart.Size = new System.Drawing.Size(164, 44);
-            this.btnstart.TabIndex = 8;
+            this.btnstart.TabIndex = 1;
             this.btnstart.Text = "START";
             this.btnstart.UseVisualStyleBackColor = true;
             this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 262);
+            this.ClientSize = new System.Drawing.Size(814, 398);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.btnset);
             this.Controls.Add(this.btnstop);
