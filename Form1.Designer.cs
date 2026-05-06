@@ -44,6 +44,7 @@
             this.btnset.TabIndex = 7;
             this.btnset.Text = "SET";
             this.btnset.UseVisualStyleBackColor = true;
+            this.btnset.Click += new System.EventHandler(this.btnset_Click);
             // 
             // btnstop
             // 
@@ -54,6 +55,7 @@
             this.btnstop.TabIndex = 6;
             this.btnstop.Text = "STOP";
             this.btnstop.UseVisualStyleBackColor = true;
+            this.btnstop.Click += new System.EventHandler(this.btnstop_Click);
             // 
             // lblTime
             // 
@@ -84,6 +86,7 @@
             this.btnstart.TabIndex = 8;
             this.btnstart.Text = "START";
             this.btnstart.UseVisualStyleBackColor = true;
+            this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
             // Form1
             // 
