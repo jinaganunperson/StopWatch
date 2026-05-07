@@ -54,6 +54,11 @@ namespace StopWatch
         private void btnstop_Click(object sender, EventArgs e)
         {
             timer.Stop();
+            // 기록: 스톱을 누른 시점의 시간을 리스트에 추가
+            if (lstHistory != null)
+            {
+                lstHistory.Items.Add(lblTime.Text);
+            }
         }
 
         private void btnset_Click(object sender, EventArgs e)
