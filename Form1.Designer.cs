@@ -33,6 +33,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btnstart = new System.Windows.Forms.Button();
+            this.lstHistory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnset
@@ -88,11 +89,21 @@
             this.btnstart.UseVisualStyleBackColor = true;
             this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
+            // lstHistory
+            // 
+            this.lstHistory.FormattingEnabled = true;
+            this.lstHistory.ItemHeight = 24;
+            this.lstHistory.Location = new System.Drawing.Point(30, 262);
+            this.lstHistory.Name = "lstHistory";
+            this.lstHistory.Size = new System.Drawing.Size(752, 100);
+            this.lstHistory.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 398);
+            this.Controls.Add(this.lstHistory);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.btnset);
             this.Controls.Add(this.btnstop);
@@ -112,6 +123,7 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnstart;
+        private System.Windows.Forms.ListBox lstHistory;
     }
 }
 
