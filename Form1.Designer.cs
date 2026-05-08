@@ -34,6 +34,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.btnstart = new System.Windows.Forms.Button();
             this.lstHistory = new System.Windows.Forms.ListBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnset
@@ -98,11 +99,22 @@
             this.lstHistory.Size = new System.Drawing.Size(752, 100);
             this.lstHistory.TabIndex = 4;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(577, 8);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(276, 56);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "다크모드";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 398);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lstHistory);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.btnset);
@@ -124,6 +136,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnstart;
         private System.Windows.Forms.ListBox lstHistory;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
