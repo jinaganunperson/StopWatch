@@ -57,7 +57,24 @@ namespace StopWatch
             // 기록: 스톱을 누른 시점의 시간을 리스트에 추가
             if (lstHistory != null)
             {
-                lstHistory.Items.Add(lblTime.Text);
+                string current = lblTime.Text ?? string.Empty;
+                bool add = false;
+
+                if (lstHistory.Items.Count == 0)
+                {
+                    add = true;
+                }
+                else
+                {
+                    var last = lstHistory.Items[lstHistory.Items.Count - 1]?.ToString() ?? string.Empty;
+                    if (!string.Equals(last, current, StringComparison.Ordinal))
+                    {
+                        add = true;
+                    }
+                }
+
+                if (add)
+                    lstHistory.Items.Add(current);
             }
         }
 
