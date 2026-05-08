@@ -67,5 +67,35 @@ namespace StopWatch
             hours = 0; minutes = 0; seconds = 0;
             lblTime.Text = "00:00:00";
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            bool dark = checkBox1.Checked;
+
+            Color back = dark ? Color.Black : SystemColors.Control;
+            Color fore = dark ? Color.White : SystemColors.ControlText;
+
+            this.BackColor = back;
+            this.ForeColor = fore;
+
+            // Update controls individually where necessary
+            lblTime.BackColor = back;
+            lblTime.ForeColor = fore;
+            lblName.BackColor = back;
+            lblName.ForeColor = fore;
+
+            btnstart.BackColor = dark ? Color.DimGray : SystemColors.Control;
+            btnstart.ForeColor = fore;
+            btnstop.BackColor = dark ? Color.DimGray : SystemColors.Control;
+            btnstop.ForeColor = fore;
+            btnset.BackColor = dark ? Color.DimGray : SystemColors.Control;
+            btnset.ForeColor = fore;
+
+            lstHistory.BackColor = dark ? Color.FromArgb(30,30,30) : SystemColors.Window;
+            lstHistory.ForeColor = fore;
+
+            checkBox1.BackColor = back;
+            checkBox1.ForeColor = fore;
+        }
     }
 }
