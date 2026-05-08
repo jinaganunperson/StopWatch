@@ -62,6 +62,11 @@ namespace StopWatch
             timer.Stop();
             hours = 0; minutes = 0; seconds = 0;
             lblTime.Text = "00:00:00";
+            // Clear history when SET is pressed
+            if (lstHistory != null)
+            {
+                lstHistory.Items.Clear();
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
