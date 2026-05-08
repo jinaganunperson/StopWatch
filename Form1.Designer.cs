@@ -35,6 +35,7 @@
             this.btnstart = new System.Windows.Forms.Button();
             this.lstHistory = new System.Windows.Forms.ListBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnset
@@ -104,17 +105,29 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(577, 8);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(276, 56);
+            this.checkBox1.Size = new System.Drawing.Size(138, 28);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "다크모드";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(653, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 44);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "HISTORY";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 398);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lstHistory);
             this.Controls.Add(this.btnstart);
@@ -138,6 +151,7 @@
         private System.Windows.Forms.Button btnstart;
         private System.Windows.Forms.ListBox lstHistory;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

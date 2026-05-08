@@ -53,29 +53,8 @@ namespace StopWatch
 
         private void btnstop_Click(object sender, EventArgs e)
         {
+            // Stop only
             timer.Stop();
-            // 기록: 스톱을 누른 시점의 시간을 리스트에 추가
-            if (lstHistory != null)
-            {
-                string current = lblTime.Text ?? string.Empty;
-                bool add = false;
-
-                if (lstHistory.Items.Count == 0)
-                {
-                    add = true;
-                }
-                else
-                {
-                    var last = lstHistory.Items[lstHistory.Items.Count - 1]?.ToString() ?? string.Empty;
-                    if (!string.Equals(last, current, StringComparison.Ordinal))
-                    {
-                        add = true;
-                    }
-                }
-
-                if (add)
-                    lstHistory.Items.Add(current);
-            }
         }
 
         private void btnset_Click(object sender, EventArgs e)
@@ -113,6 +92,30 @@ namespace StopWatch
 
             checkBox1.BackColor = back;
             checkBox1.ForeColor = fore;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // HISTORY button: 기록만 하고 타이머를 멈추지 않음
+            if (lstHistory == null) return;
+
+            string current = lblTime.Text ?? string.Empty;
+            if (string.IsNullOrEmpty(current)) return;
+
+            bool add = false;
+            if (lstHistory.Items.Count == 0)
+            {
+                add = true;
+            }
+            else
+            {
+                var last = lstHistory.Items[lstHistory.Items.Count - 1]?.ToString() ?? string.Empty;
+                if (!string.Equals(last, current, StringComparison.Ordinal))
+                    add = true;
+            }
+
+            if (add)
+                lstHistory.Items.Add(current);
         }
     }
 }
